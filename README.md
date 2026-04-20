@@ -76,7 +76,7 @@ When disabled, tools are placed on the floor along the closet's default wall ins
 
 ## Credits
 
-Developed by [Yakka_Productions](https://thunderstore.io/c/lethal-company/p/Yakka_Productions/).
+Developed by [Yakka_Productions](https://thunderstore.io/c/lethal-company/p/Yakka_Productions/) — [GitHub](https://github.com/Yakka-2k/ShipCleaner)
 Built with [BepInEx](https://github.com/BepInEx/BepInEx) and [LethalCompanyInputUtils](https://thunderstore.io/c/lethal-company/p/Rune580/LethalCompanyInputUtils/).
 
 Inspired by mods such as:

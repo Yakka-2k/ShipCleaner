@@ -4,7 +4,7 @@
     "website_url": "https://github.com/Yakka-2k/ShipCleaner",
     "description": "Automatically sorts your ship's scrap and equipment with a single hotkey press.",
     "dependencies": [
-        "BepInEx-BepInExPack-5.4.2100",
-        "Rune580-LethalCompanyInputUtils-0.7.13"
+        "BepInEx-BepInExPack-5.4.2305",
+        "Rune580-LethalCompany_InputUtils-0.7.13"
     ]
 }

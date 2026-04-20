@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<LangVersion>latest</LangVersion>
+
+		<!-- Output directly into your LC plugins folder -->
+		<GameDir>K:\SteamLibrary\steamapps\common\Lethal Company</GameDir>
+		<OutputPath>$(GameDir)\BepInEx\plugins\ShipCleaner\</OutputPath>
+
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+
+		<!-- ========================= -->
+		<!--        LOCAL LIB DLLs     -->
+		<!-- ========================= -->
+
+		<Reference Include="0Harmony">
+			<HintPath>lib\0Harmony.dll</HintPath>
+		</Reference>
+
+		<Reference Include="BepInEx">
+			<HintPath>lib\BepInEx.dll</HintPath>
+		</Reference>
+
+		<Reference Include="Assembly-CSharp">
+			<HintPath>lib\Assembly-CSharp.dll</HintPath>
+		</Reference>
+
+		<Reference Include="LethalConfig">
+		  <HintPath>lib\LethalConfig.dll</HintPath>
+		</Reference>
+
+		<Reference Include="Unity.Netcode.Runtime">
+			<HintPath>lib\Unity.Netcode.Runtime.dll</HintPath>
+		</Reference>
+
+		<Reference Include="Unity.Multiplayer.Tools.NetStats">
+			<HintPath>lib\Unity.Multiplayer.Tools.NetStats.dll</HintPath>
+		</Reference>
+
+		<Reference Include="Unity.Multiplayer.Tools.MetricTypes">
+			<HintPath>lib\Unity.Multiplayer.Tools.MetricTypes.dll</HintPath>
+		</Reference>
+
+		<Reference Include="UnityEngine">
+			<HintPath>lib\UnityEngine.dll</HintPath>
+		</Reference>
+
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>lib\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>lib\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+
+		<Reference Include="Unity.InputSystem">
+			<HintPath>lib\Unity.InputSystem.dll</HintPath>
+		</Reference>
+
+		<Reference Include="LethalCompanyInputUtils">
+			<HintPath>lib\LethalCompanyInputUtils.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="Source\Plugin.cs" />
+		<Compile Include="Source\ShipCleaner_Config.cs" />
+		<Compile Include="Source\ShipCleaner_HotkeyListener.cs" />
+		<Compile Include="Source\ShipCleaner_Manager.cs" />
+		<Compile Include="Source\ShipCleanerKeybinds.cs" />
+	</ItemGroup>
+
+</Project>
